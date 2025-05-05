@@ -1,0 +1,11 @@
+
+public class Greet{
+     public void salutations(){
+        //OUTPUTS THE MESSAGE
+        System.out.println("Hi i am using VSCODE");
+    }
+    public static void main(String[] args) {
+       Greet my = new Greet();
+       my.salutations();
+    }
+}
