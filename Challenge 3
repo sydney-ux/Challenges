@@ -1,19 +1,22 @@
+//code using if else
 import java.util.Scanner;
-public class Iterations {
-    Scanner sc = new Scanner(System.in);
+  public class Scenario{
+    public void IntergerValue(){
+ Scanner scanner = new Scanner(System.in);
+ System.out.print("Enter interger value:");
+ int x = scanner.nextInt();
+  if (x==0 || x < 0){
+    System.out.println("Enter a proper interger value");
+  }
+  else{
+System.out.println("You have entered:" + x);
 
-    public void showHello(){
-        String choice;//guard variable
-        System.out.println("For Hello type h,anything else to stop");
-        choice = sc.next();//set guard variable
-        while("h".equals(choice)){
-            System.out.println("Hello");
-            choice = sc.next();//updates guard variable
-        }
-
+  }
+  scanner.close();
     }
-    public static void main(String[] args) {
-        Iterations vy = new Iterations();
-        vy.showHello();
-    }
+  public static void main(String[] args) {
+    Scenario y = new Scenario();
+    y.IntergerValue();
+  }
 }
+
