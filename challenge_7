@@ -1,11 +1,11 @@
 public class sum {
 
     public static int sum(int n) {
-        // Base case: if n is 1, the sum is 1
+        //Setting Base case: if n is 1, the sum is 1
         if (n == 1) {
             return 1;
         } else {
-            // Recursive case: n + sum of n-1
+            // Setting Recursive case: n + sum of n-1
             return n + sum(n - 1);
         }
     }
